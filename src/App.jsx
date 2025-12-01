@@ -1,6 +1,6 @@
-
 import './App.css'
-import SimpleForm from './assets/Components/SimpleForm.jsx/SimpleForm'
+import FormData from './assets/Components/FormData/FormData'
+import SimpleForm from './assets/Components/SimpleForm/SimpleForm'
 
 function App() {
 
@@ -8,7 +8,8 @@ function App() {
   return (
     <>
     <h1>Explore react form</h1>
-    <SimpleForm></SimpleForm>
+    {/* <SimpleForm></SimpleForm> */}
+    {/* <FormData></FormData> */}
     </>
   )
 }
