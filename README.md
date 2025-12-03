@@ -24,5 +24,8 @@ Form Methods:
      <input type="password" name="password" onChange={function} placeholder='Enter your password'/> 
     </form>
 
+4. 
+    Uncontrolled using the useRef() 
+
 
    
