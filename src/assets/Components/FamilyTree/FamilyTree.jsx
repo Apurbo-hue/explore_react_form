@@ -1,9 +1,9 @@
-import React, { createContext, useState } from 'react';
+import React, { useState } from 'react';
 import Grandpa from './Grandpa';
 import './FamilyTree.css'
+import { AssetContext, MoneyContext } from './context';
 
-export const AssetContext = createContext('')
-export const MoneyContext = createContext(0)
+
 
 const FamilyTree = () => {
     const asset = 'Diamond'
@@ -13,11 +13,14 @@ const FamilyTree = () => {
         <div className='family-tree'>
             <h2>Family Tree</h2>
             <h1>{money}</h1>
-            <MoneyContext value={[money,setMoney]}>
+
+
+            <MoneyContext value={[money, setMoney]}>
                 <AssetContext value={newAsset}>
                     <Grandpa asset={asset}></Grandpa>
                 </AssetContext>
             </MoneyContext>
+
         </div>
     );
 };
